@@ -1,0 +1,287 @@
+body{
+    margin: 0px;
+    padding: 0px; 
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.background-image{
+    background-image: url("../images/lib-bg2.jpg");
+    height: 100vh;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.1);
+    
+}
+
+
+.title h2{
+    /* text-align: center; */
+    top: 35%;
+    left: 30%;
+    position: absolute;
+    font-size: 90px;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Poppins', sans-serif;
+    color:#5d4954;
+    filter: brightness(25%);
+}
+
+.title p{
+    top: 50%;
+    left: 17%;
+    position: absolute;
+    font-size: 25px;
+}
+.loginBox{
+    width: 400px;
+    height: 420px;
+    background-color: rgb(255, 255, 255);
+    top: 50%;
+    left: 80%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 70px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    
+}
+
+.avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: calc(50% - 40px);
+}
+
+h1{
+    margin: 0px;
+    padding: 0 0 20px ;
+    text-align: center;
+    font-size: 30px;
+}
+
+.loginBox input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(186, 190, 182);
+    background-color: white;
+    font-size: 17px;   
+    text-align:left;
+    text-indent: 1em;
+}
+
+.loginBox input[type="submit"]{
+    border: none;
+    border-radius: 10px;
+    background-color: #5d4954;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-indent: 0px;
+    margin-bottom: 0px;
+}
+
+#create{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(3, 98, 122);
+    width: 60%;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.loginBox input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(32, 80, 170);
+    
+}
+
+.loginBox a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 30px;
+    color: rgb(156, 156, 156);
+    margin-left: 130px;
+}
+
+.loginBox a:hover{
+    color: rgb(42, 42, 163);
+}
+
+
+.pop-up{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: all 0.2s ease-in;
+
+}
+
+.pop-up h1{
+    text-align: left;
+}
+
+.modal-content{
+    width: 500px;
+    height: 550px;
+    top: 8%;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    padding: 30px;
+    
+}
+
+.modal-content input[type="text"], .modal-content input[type="email"], .modal-content input[type="password"], .modal-content input[type="button"]{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+    border-radius: 10px;
+    border: 1px solid rgb(186, 190, 182);
+    background-color: white;
+    font-size: 17px;   
+    text-align:left;
+    text-indent: 1em;
+}
+
+.modal-content input[type="text"]:focus{
+  outline-color: #5d4954;
+}
+
+.modal-content input[type="radio"]{
+    display: inline-block   ;
+    width:10%;
+    border: 1px solid rgb(186, 190, 182);
+    margin-bottom: 30px;
+    flex-direction: row;
+    font-size: 12px;
+    
+}
+
+.modal-content input[type="number"]{
+    width:40px ;
+    border: 1px solid rgb(186, 190, 182);
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+#signUp{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(3, 98, 122);
+    width: 40%;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 28%;
+}
+
+#signUp:hover{
+    cursor: pointer;
+}
+
+.close{
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 40px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:720px){
+    .title h2{
+    /* text-align: center; */
+    top: 5%;
+    left: 30%;
+    position: absolute;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #5d4954;
+    
+}
+
+.title p{
+    top: 12%;
+    left: 5%;
+    position: absolute;
+    font-size: 20px;
+}
+
+    .loginBox{
+    width: 400px;
+    height: 420px;
+    background-color: rgb(255, 255, 255);
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 70px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    
+}
+
+.pop-up{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.pop-up h1{
+    text-align: left;
+}
+
+.modal-content{
+    width: 300px;
+    height: 500px;
+    top: 8%;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+
+
+}

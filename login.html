@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="title">
+        <h2>Library</h2>
+        <p>Acquire the Knowledge in silence, <br>spread the wisdom out loud.</p>
+    </div>
+    <div class="loginBox">
+        <img class="avatar" src="images/avatar.jpg" alt="avatar">
+        <h1 class="header">Login</h1>
+        <form class="login" action="addbook.html">
+            <input type="text" id = "username" placeholder="Username"><br>
+            <input type="password" id="password" placeholder="Password"><br>
+            <input type="submit" value="Login">
+            <br>
+            <a href="#">Forgot password?</a><br>
+            <hr>
+            <input id="create" type="button" value="Create New Account">
+            
+        </form>
+    </div>
+        
+    <div class="pop-up">
+        <div class="modal-content">
+            <div class="close">+</div>
+            <h1>Sign Up</h1>
+            <input type="text" id="name" placeholder="Name"><br>
+            <label for="gender">Gender</label><br>
+            <div>
+                <div>
+                    <label for="gender">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="gender">Female</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                </div>
+                <label for="age">Age</label>
+                <input type="number" id="age" value="age">
+            </div>
+            <input type="email" id="email" placeholder="email address"><br>
+            <input type="password" id="newPassword" placeholder="New password"><br>
+            <input type="password" id="confirmPassword" placeholder="Confirm password"><br>
+            <hr> 
+            <input type="button" id="signUp" value="Sign Up">
+        </div>
+    </div>
+
+    <!-- <script src="app.js"></script> -->
+    <script>
+        document.getElementById("create").addEventListener("click",
+        function(){
+            document.querySelector('.pop-up').style.display='flex';
+        });
+
+        document.querySelector(".close").addEventListener("click",
+        function(){
+            document.querySelector('.pop-up').style.display='none';
+        });
+    </script>
+    <script src="login.js"></script>
+</body>
+</html>

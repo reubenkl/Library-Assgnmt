@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <style>
+        .dropdown-menu > a{
+            color:black
+        }
+        .dropdown-item.active, .dropdown-item:active {
+            color: #fff;
+            background-color: #5d4954;
+        }
+    </style>
+    <title>Library-Home</title>
+</head>
+<body>
+    <div class="background-image"></div>
+    <nav>
+        <div class="logo">
+            <a href="home.html"><h4>Library</h4></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" id="navbardrop" href="#">Books</a>
+                <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="addbook.html">AddBook</a>
+                    <a class="dropdown-item" href="updatebook.html">UpdateBook</a>
+                    <a class="dropdown-item" href="reviewbook.html">ReviewBook</a>
+                    <a class="dropdown-item" href="searchbook.html">SearchBook</a>
+                    <a class="dropdown-item" href="showallbooks.html">ShowAllBooks</a>
+                </div>
+            </li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+        
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    
+    <script src="app.js"></script>
+    <script src="app2.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="index.js"></script> -->
+    <script src="libraryscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
